@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/F:/Andriod%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_home_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/F:/Andriod%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_lightbulb_outline_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,12 +28,12 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="3cb37f" />
-                            <entry key="height" value="30" />
-                            <entry key="outputName" value="ic_home_26" />
+                            <entry key="color" value="888888" />
+                            <entry key="height" value="26" />
+                            <entry key="outputName" value="ic_bulb" />
                             <entry key="overrideSize" value="true" />
                             <entry key="sourceFile" value="C:\Users\ROHIT" />
-                            <entry key="width" value="30" />
+                            <entry key="width" value="26" />
                           </map>
                         </option>
                       </PersistentState>

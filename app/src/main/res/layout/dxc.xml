@@ -222,6 +222,71 @@
                 android:textSize="10sp"
                 android:textStyle="normal" />
 
+            <ImageButton
+                android:id="@+id/ic_quiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/bottomNavigation"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="104dp"
+                android:layout_marginRight="104dp"
+                android:background="#ffffff"
+                android:src="@drawable/ic_bulb"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/tvquiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ic_quiz"
+
+
+                android:layout_alignStart="@+id/ic_quiz"
+
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="Quiz"
+                android:textColor="#888888"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <ImageButton
+                android:id="@+id/ic_doubt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/bottomNavigation"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#ffffff"
+                app:srcCompat="@drawable/doubt"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/tvdoubt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ic_doubt"
+
+
+                android:layout_alignStart="@+id/ic_doubt"
+
+
+                android:layout_marginStart="-12dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="Ask Doubt"
+                android:textColor="#888888"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
 
         </RelativeLayout>
 
