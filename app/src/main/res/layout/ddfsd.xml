@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Classroom">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/classroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            app:fontFamily="sans-serif-medium"
+            android:textColor="#404444"
+            android:textSize="22sp"
+            android:background="#ffffff"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:textStyle="normal"
+            tools:text="Classroom"
+            android:layout_marginStart="16dp" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/bell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#ffffff"
+            android:src="@drawable/ic_cb" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:id="@+id/tabs_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp">
+
+            <TextView
+                android:id="@+id/coursesLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="15dp"
+                android:text="Popular Courses"
+                android:singleLine="false"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="#444444"
+                android:textSize="18sp"
+                app:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:id="@+id/vidLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="15dp"
+                android:singleLine="false"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="Free Videos"
+                android:textColor="#999999"
+                android:textSize="16sp"
+                app:fontFamily="sans-serif" />
+
+            <TextView
+                android:id="@+id/inspLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="15dp"
+
+                android:text="Inspiration"
+
+                android:ellipsize="none"
+                android:singleLine="true"
+
+                android:textColor="#999999"
+                android:textSize="16sp"
+                app:fontFamily="sans-serif" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
