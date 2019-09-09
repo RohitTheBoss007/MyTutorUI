@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Classroom"
+    android:background="#ffffff">
+
+
+    <TextView
+        android:id="@+id/classroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="25dp"
+        android:text="Classroom"
+        android:singleLine="false"
+        android:layout_marginLeft="16dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="#444444"
+        android:textSize="22sp"
+        app:fontFamily="sans-serif-medium" />
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/bell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#ffffff"
+        android:src="@drawable/ic_cb" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="80dp"
+        android:background="#ffffff">
+
+
+        <LinearLayout
+            android:id="@+id/tabs_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/coursesLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:padding="10dp"
+
+                    android:singleLine="false"
+                    android:text="Popular Courses"
+                    android:textColor="#444444"
+                    android:textSize="18sp"
+                    app:fontFamily="sans-serif-medium" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/vidLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+
+                    android:lines="1"
+                    android:padding="10dp"
+
+                    android:singleLine="false"
+                    android:text="Free Videos"
+                    android:textColor="#999999"
+                    android:textSize="16sp"
+                    app:fontFamily="sans-serif" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/inspLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:ellipsize="none"
+
+                    android:padding="10dp"
+
+                    android:singleLine="true"
+                    android:text="Inspiration"
+
+                    android:textColor="#999999"
+                    android:textSize="16sp"
+                    app:fontFamily="sans-serif" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activeCourses"
+            android:layout_width="118dp"
+            android:layout_height="7dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="37dp"
+            android:background="@drawable/button_default"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/mainPager"
+            android:layout_width="match_parent"
+            android:layout_height="394dp"
+            android:layout_above="@+id/bottomNavigation"
+            android:layout_below="@+id/tabs_layout"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-8dp"
+            android:layout_marginBottom="-2dp"></android.support.v4.view.ViewPager>
+
+
+        <RelativeLayout
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+
+
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp">
+
+            <ImageButton
+                android:id="@+id/ic_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_above="@+id/tvc"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="-1dp"
+                android:background="#ffffff"
+                android:src="@drawable/ic_home_26" />
+
+            <TextView
+                android:id="@+id/tvhome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ic_home"
+
+                android:layout_alignStart="@+id/ic_home"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="Home"
+                android:textColor="#3cb37f"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <ImageButton
+                android:id="@+id/ic_c"
+
+                android:layout_width="42dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/bottomNavigation"
+                android:layout_alignLeft="@+id/bottomNavigation"
+                android:layout_alignTop="@+id/bottomNavigation"
+                android:layout_marginStart="145dp"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:src="@drawable/classroom_mdpi"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/tvc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ic_c"
+
+
+                android:layout_alignStart="@+id/ic_c"
+                android:layout_marginStart="-5dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="Classroom"
+                android:textColor="#888888"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <ImageButton
+                android:id="@+id/ic_quiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/bottomNavigation"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="154dp"
+                android:layout_marginRight="154dp"
+                android:background="#ffffff"
+                android:src="@drawable/ic_bulb"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/tvquiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ic_quiz"
+
+
+                android:layout_alignStart="@+id/ic_quiz"
+
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="Quiz"
+                android:textColor="#888888"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <ImageButton
+                android:id="@+id/ic_doubt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/bottomNavigation"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="57dp"
+                android:layout_marginRight="57dp"
+                android:background="#ffffff"
+                app:srcCompat="@drawable/doubt"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/tvdoubt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ic_doubt"
+
+
+                android:layout_alignStart="@+id/ic_doubt"
+
+
+                android:layout_marginStart="-12dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="Ask Doubt"
+                android:textColor="#888888"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="72dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        >
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#ffffff"
+            android:src="@drawable/group_mdpi"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:padding="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:text="Mentorship"
+            android:textColor="#3cb37f"
+            android:textSize="10sp"
+            android:textStyle="normal"
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
