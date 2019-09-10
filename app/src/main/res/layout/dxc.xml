@@ -119,7 +119,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/activeCourses"
+            android:id="@+id/dash"
             android:layout_width="118dp"
             android:layout_height="7dp"
             android:layout_alignParentStart="true"
@@ -133,17 +133,49 @@
 
 
         </LinearLayout>
+        <LinearLayout
+            android:id="@+id/dash2"
+            android:layout_width="95dp"
+            android:layout_height="7dp"
+            android:visibility="gone"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="156dp"
+            android:layout_marginLeft="156dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/button_default"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/dash3"
+            android:layout_width="85dp"
+            android:layout_height="7dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="260dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="34dp"
+            android:background="@drawable/button_default"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
 
 
         <android.support.v4.view.ViewPager
             android:id="@+id/mainPager"
             android:layout_width="match_parent"
-            android:layout_height="394dp"
+            android:layout_height="477dp"
             android:layout_above="@+id/bottomNavigation"
             android:layout_below="@+id/tabs_layout"
             android:layout_alignParentStart="true"
             android:layout_marginStart="0dp"
-            android:layout_marginTop="-8dp"
+            android:layout_marginTop="1dp"
             android:layout_marginBottom="-2dp"></android.support.v4.view.ViewPager>
 
 
