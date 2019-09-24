@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="367dp"
+   >
+
+    <LinearLayout
+        android:id="@+id/tv_feed"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentTop="true">
+
+
+        <TextView
+            android:id="@+id/text_feed"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="-0.03"
+            android:lines="2"
+            android:text="@string/feed_text"
+            android:textColor="#444444"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            tools:targetApi="lollipop" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="177dp"
+            android:src="@drawable/tiger"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitXY"
+            />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#737373"
+            android:text="@string/dummy_1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="#979797"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="14dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#444444"
+            android:letterSpacing="-0.01"
+            android:lineSpacingExtra="3sp"
+            tools:text="23 Aug, 2019"
+            />
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/fav"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="93dp"
+        android:layout_marginRight="93dp"
+        android:layout_marginBottom="13dp"
+        app:srcCompat="@drawable/favorite_mhdpi" />
+
+    <ImageButton
+        android:id="@+id/bkmrk"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="13dp"
+        app:srcCompat="@drawable/bookmarks_mdpi" />
+
+    <ImageButton
+        android:id="@+id/con"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="13dp"
+        app:srcCompat="@drawable/network_connection_mdpi" />
+
+
+
+</RelativeLayout>
