@@ -12,7 +12,7 @@ import android.widget.ImageView;
 public class ViewPagerAdapter extends PagerAdapter {
     Context context;
     LayoutInflater layoutInflater;
-    Integer [] images={R.drawable.slide_xhdpi,R.drawable.slide_xhdpi,R.drawable.slide_xhdpi};
+    Integer [] images={R.drawable.tiger,R.drawable.slide_xhdpi,R.drawable.slide_xhdpi};
     @Override
     public int getCount() {
         return images.length;
