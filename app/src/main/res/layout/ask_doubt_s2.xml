@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ndroid="http://schemas.android.com/apk/res-auto"
+    android:background="#f0f4f7"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="72dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:textColor="#444444"
+            android:lineSpacingExtra="-4sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24.dp"
+            tools:text="Ask Doubt"/>
+
+        <ImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+
+
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25.8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#ffffff"
+            android:src="@drawable/buzz_mdpi" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+
+        android:layout_marginTop="8dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:textColor="#0284b3"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="16dp"
+            tools:text="Select a subject to ask a doubt"
+            tools:targetApi="jelly_bean" />
+
+        <RelativeLayout
+            android:id="@+id/ab"
+            android:background="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="52dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <ImageView
+                android:id="@+id/a"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:src="@drawable/group_8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/a"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Physics"
+                android:textColor="#444444"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="52dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <ImageView
+                android:id="@+id/b"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+
+
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:src="@drawable/group_8_bot" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/b"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Chemistry"
+                android:textColor="#444444"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="52dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <ImageView
+                android:id="@+id/c"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:src="@drawable/group_8_mat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/c"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Maths"
+                android:textColor="#444444"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/abc"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="170dp"
+        android:background="#ffffff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:textColor="#0284b3"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            tools:text="Chats"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
