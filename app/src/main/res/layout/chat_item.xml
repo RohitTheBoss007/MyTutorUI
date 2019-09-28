@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="100dp">
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
     <ImageView
         android:id="@+id/magnet"
         android:layout_width="40dp"
@@ -32,5 +32,29 @@
         android:textColor="#bababa"
         android:text="Definition of this word is …."
         />
+
+    <TextView
+        android:id="@+id/active"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginLeft="304dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="normal"
+        android:textColor="#3cb37f"
+        android:text="Active"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif"
+        android:layout_below="@+id/active"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="normal"
+        android:textColor="#bababa"
+        android:text="12/09/2019"/>
 
 </RelativeLayout>

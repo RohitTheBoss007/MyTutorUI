@@ -18,14 +18,11 @@
             android:fontFamily="sans-serif-medium"
             android:textStyle="normal"
             android:textColor="#444444"
-            android:layout_alignParentTop="true"
             android:lineSpacingExtra="-4sp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="24.dp"
-            tools:text="Ask Doubt"
-            tools:ignore="UnusedAttribute"
-            android:layout_marginStart="16dp" />
+            tools:text="Ask Doubt"/>
 
         <ImageButton
             android:layout_width="24dp"
@@ -94,8 +91,7 @@
                 android:text="Physics"
                 android:textColor="#444444"
                 android:textSize="14sp"
-                android:textStyle="normal"
-                android:layout_toRightOf="@+id/a" />
+                android:textStyle="normal" />
 
         </RelativeLayout>
         <RelativeLayout
@@ -131,8 +127,7 @@
                 android:text="Chemistry"
                 android:textColor="#444444"
                 android:textSize="14sp"
-                android:textStyle="normal"
-                android:layout_toRightOf="@+id/b" />
+                android:textStyle="normal" />
 
         </RelativeLayout>
         <RelativeLayout
@@ -188,9 +183,7 @@
             android:textColor="#0284b3"
             android:layout_marginTop="8dp"
             android:layout_marginLeft="16dp"
-            tools:text="Chats"
-            tools:ignore="UnusedAttribute"
-            android:layout_marginStart="16dp" />
+            tools:text="Chats"/>
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -337,7 +330,7 @@
                 android:fontFamily="sans-serif-medium"
                 android:textStyle="normal"
                 android:textColor="#444444"
-                android:text="Maths Doubt"/>
+                android:text="Chemistry Doubt"/>
 
             <TextView
                 android:layout_width="wrap_content"

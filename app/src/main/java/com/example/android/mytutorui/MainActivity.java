@@ -14,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.item_feed_main);
-        startActivity(new Intent(MainActivity.this,ImageSliderActivity.class));
+        setContentView(R.layout.ask_doubt_s2);
+        //startActivity(new Intent(MainActivity.this,ImageSliderActivity.class));
 
     }
 }
