@@ -60,7 +60,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginLeft="16dp"
             tools:text="Select a subject to ask a doubt"
-            tools:targetApi="jelly_bean" />
+             />
 
         <RelativeLayout
             android:id="@+id/ab"
@@ -166,7 +166,8 @@
                 android:text="Maths"
                 android:textColor="#444444"
                 android:textSize="14sp"
-                android:textStyle="normal" />
+                android:textStyle="normal"
+                android:layout_toRightOf="@+id/c" />
 
         </RelativeLayout>
 

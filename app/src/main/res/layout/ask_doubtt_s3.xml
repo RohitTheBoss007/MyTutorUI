@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f4f7">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="22dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="28sp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/arrow_left"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="23.8dp"
+            android:layout_toRightOf="@+id/back"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:textColor="#444444"
+            android:lineSpacingExtra="2sp"
+            android:text="Physics Doubt"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl1"
+        android:background="#ffffff"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/mentorsimg"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/group_3"/>
+
+        <TextView
+            android:layout_toRightOf="@id/mentorsimg"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:textColor="#444444"
+            android:lineSpacingExtra="8sp"
+            android:text="+1.1K Tutors are here to help you"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#c9c9c9"
+            android:lineSpacingExtra="2sp"
+            android:gravity="center_horizontal"
+            android:text="@string/doubtInfo"
+            android:layout_marginTop="114dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+
+            />
+
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="265dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="163dp"
+            android:hint="Ask your doubt"
+            android:background="@drawable/edit_round"
+            android:paddingLeft="15dp"
+            android:paddingRight="30dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="20dp"
+            android:layout_height="24dp"
+            android:layout_alignTop="@+id/editText1"
+            android:layout_alignRight="@+id/editText1"
+            android:layout_alignBottom="@+id/editText1"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="8dp"
+            android:padding="2dp"
+            app:srcCompat="@drawable/microphone" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="170dp"
+            app:srcCompat="@drawable/camera" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="170dp"
+            android:layout_marginRight="8dp"
+            app:srcCompat="@drawable/like"
+            android:layout_marginEnd="8dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
