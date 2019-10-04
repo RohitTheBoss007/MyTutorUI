@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f4f7">
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/arrow_left"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:textColor="#444444"
+            android:lineSpacingExtra="2sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="54dp"
+            android:text="Media Links and Docs"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_below="@id/rl1"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_media"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#999999"
+            android:text="Media"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="41dp"
+            />
+        <LinearLayout
+            android:id="@+id/a"
+            android:layout_width="40dp"
+            android:layout_height="7dp"
+           android:layout_marginTop="7dp"
+            android:layout_below="@id/txt_media"
+            android:layout_marginLeft="43dp"
+
+            android:background="@drawable/button_default"
+            android:orientation="vertical"/>
+        <TextView
+            android:id="@+id/txt_links"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:textColor="#444444"
+            android:text="Links"
+            android:layout_marginLeft="165dp"
+
+            android:layout_marginTop="14dp"
+            />
+        <LinearLayout
+            android:id="@id/b"
+            android:layout_width="40dp"
+            android:layout_height="7dp"
+            android:layout_marginTop="4dp"
+            android:layout_below="@id/txt_links"
+            android:layout_marginLeft="167dp"
+
+            android:background="@drawable/button_default"
+            android:orientation="vertical"/>
+
+        <TextView
+            android:id="@+id/txt_docs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#999999"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="283dp"
+            android:text="Docs"
+            />
+        <LinearLayout
+            android:id="@id/c"
+            android:layout_width="35dp"
+            android:layout_height="7dp"
+            android:layout_marginTop="4dp"
+            android:layout_below="@id/txt_docs"
+            android:layout_marginLeft="283dp"
+
+            android:background="@drawable/button_default"
+            android:orientation="vertical"/>
+
+        <android.support.v7.widget.RecyclerView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            tools:listitem="@layout/item_link"
+            >
+
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

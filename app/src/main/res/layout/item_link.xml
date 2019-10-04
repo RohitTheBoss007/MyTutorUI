@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout
+    android:layout_margin="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="328dp"
+    android:layout_height="68dp"
+    android:layout_centerInParent="true"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/img_rect"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/rectangle"
+        android:layout_margin="4dp"/>
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        android:layout_toRightOf="@id/img_rect"
+        android:layout_marginLeft="3dp"
+        android:textStyle="normal"
+        android:textColor="#444444"
+        android:lines="2"
+        android:text="http://www.mytutor247.in/free-test-series"
+        />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_toRightOf="@id/img_rect"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:textColor="#444444"
+        android:lines="2"
+        android:layout_below="@id/link"
+        android:text="NTAs decision to conduct JEE Main exam twice annually and in online mode has left XII Standard students on unfamiliar terrain. If you are wondering how to perform well in JEE Main CBT, you are not alone. "
+        />
+
+
+
+</RelativeLayout>
+    </RelativeLayout>
