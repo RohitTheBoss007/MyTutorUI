@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout
+        android:layout_margin="4dp"
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="328dp"
+        android:layout_height="68dp"
+        android:layout_centerInParent="true"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/img_rect"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/img_pdf"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:id="@+id/link"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#444444"
+            android:lineSpacingExtra="4sp"
+            android:lines="2"
+            android:layout_toRightOf="@id/img_rect"
+            android:layout_marginLeft="7dp"
+            android:text="Sample Question Paper for JEE 2019"
+            />
+
+        <TextView
+            android:id="@+id/pages"
+            android:layout_width="41dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#444444"
+            android:text="35 pages"
+            android:lines="1"
+
+            android:layout_toRightOf="@id/img_rect"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="49dp"
+
+            />
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#444444"
+            android:text="2.4 MB"
+            android:lines="1"
+
+
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="49dp"
+
+            />
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#444444"
+            android:text="pdf"
+            android:lines="1"
+
+
+            android:layout_marginLeft="173dp"
+            android:layout_marginTop="49dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/download"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/cloud_download"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Open"
+            android:textColor="#0284b3"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
