@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ask_doubt_4_7);
-        //startActivity(new Intent(MainActivity.this,ImageSliderActivity.class));
+        startActivity(new Intent(MainActivity.this,MediaGridActivity.class));
 
     }
 }
