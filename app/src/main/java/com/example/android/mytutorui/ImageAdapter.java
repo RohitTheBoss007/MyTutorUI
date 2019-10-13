@@ -1,6 +1,7 @@
 package com.example.android.mytutorui;
 
 import android.content.Context;
+import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -8,6 +9,9 @@ import android.widget.GridView;
 import android.widget.ImageView;
 
 public class ImageAdapter extends BaseAdapter {
+
+
+
 
     private Context mContext;
     public int[] imageArray={
@@ -49,3 +53,4 @@ public class ImageAdapter extends BaseAdapter {
         return imageView;
     }
 }
+

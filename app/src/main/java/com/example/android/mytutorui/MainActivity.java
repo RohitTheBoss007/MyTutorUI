@@ -14,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ask_doubt_4_7);
-        startActivity(new Intent(MainActivity.this,MediaGridActivity.class));
+        setContentView(R.layout.doubt_screen_1);
+        //startActivity(new Intent(MainActivity.this,MediaGridActivity.class));
 
     }
 }
